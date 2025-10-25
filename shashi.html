@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashi Malpani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 contenteditable="false">Shashi Malpani</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tushar.html">Tushar</a>
+      <a href="palak.html">Palak</a>
+      <a href="vijay.html">Vijay</a>
+      <a href="ramgopal.html">Ram Gopal</a>
+    </nav>
+    <div class="controls">
+      <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="system">System</option>
+      </select>
+      <input type="color" id="bgColorPicker" title="Background color" />
+      <input type="color" id="headerColorPicker" title="Header/Footer color" />
+      <button onclick="toggleLogin()">Admin</button>
+    </div>
+  </header>
+
+  <div id="loginPanel" class="hidden">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminId" placeholder="Admin ID" />
+    <input type="password" id="adminPass" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <section>
+    <h2 contenteditable="false">Biography</h2>
+    <p contenteditable="false">Born on 8th February 1975, Shashi lives in North Lakhimpur and is actively involved in running a hardware business. Her page reflects her dedication to family and business, preserving her legacy through stories and photos.</p>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+            <img src="images/shashi/photo1.jpg" alt="Shashi photo 1">
+      <img src="images/shashi/photo2.jpg" alt="Shashi photo 2">
+      <img src="images/shashi/photo3.jpg" alt="Shashi photo 3">
+      <img src="images/shashi/photo4.jpg" alt="Shashi photo 4">
+      <img src="images/shashi/photo5.jpg" alt="Shashi photo 5">
+      <img src="images/shashi/photo6.jpg" alt="Shashi photo 6">
+      <img src="images/shashi/photo7.jpg" alt="Shashi photo 7">
+      <img src="images/shashi/photo8.jpg" alt="Shashi photo 8">
+      <img src="images/shashi/photo9.jpg" alt="Shashi photo 9">
+      <img src="images/shashi/photo10.jpg" alt="Shashi photo 10">
+      <img src="images/shashi/photo11.jpg" alt="Shashi photo 11">
+      <img src="images/shashi/photo12.jpg" alt="Shashi photo 12">
+      <img src="images/shashi/photo13.jpg" alt="Shashi photo 13">
+      <img src="images/shashi/photo14.jpg" alt="Shashi photo 14">
+      <img src="images/shashi/photo15.jpg" alt="Shashi photo 15">
+      <img src="images/shashi/photo16.jpg" alt="Shashi photo 16">
+      <img src="images/shashi/photo17.jpg" alt="Shashi photo 17">
+      <img src="images/shashi/photo18.jpg" alt="Shashi photo 18">
+      <img src="images/shashi/photo19.jpg" alt="Shashi photo 19">
+      <img src="images/shashi/photo20.jpg" alt="Shashi photo 20">
+      <img src="images/shashi/photo21.jpg" alt="Shashi photo 21">
+      <img src="images/shashi/photo22.jpg" alt="Shashi photo 22">
+      <img src="images/shashi/photo23.jpg" alt="Shashi photo 23">
+      <img src="images/shashi/photo24.jpg" alt="Shashi photo 24">
+      <img src="images/shashi/photo25.jpg" alt="Shashi photo 25">
+      <img src="images/shashi/photo26.jpg" alt="Shashi photo 26">
+      <img src="images/shashi/photo27.jpg" alt="Shashi photo 27">
+      <img src="images/shashi/photo28.jpg" alt="Shashi photo 28">
+      <img src="images/shashi/photo29.jpg" alt="Shashi photo 29">
+      <img src="images/shashi/photo30.jpg" alt="Shashi photo 30">
+      <img src="images/shashi/photo31.jpg" alt="Shashi photo 31">
+      <img src="images/shashi/photo32.jpg" alt="Shashi photo 32">
+      <img src="images/shashi/photo33.jpg" alt="Shashi photo 33">
+      <img src="images/shashi/photo34.jpg" alt="Shashi photo 34">
+      <img src="images/shashi/photo35.jpg" alt="Shashi photo 35">
+      <img src="images/shashi/photo36.jpg" alt="Shashi photo 36">
+      <img src="images/shashi/photo37.jpg" alt="Shashi photo 37">
+      <img src="images/shashi/photo38.jpg" alt="Shashi photo 38">
+      <img src="images/shashi/photo39.jpg" alt="Shashi photo 39">
+      <img src="images/shashi/photo40.jpg" alt="Shashi photo 40">
+      <img src="images/shashi/photo41.jpg" alt="Shashi photo 41">
+      <img src="images/shashi/photo42.jpg" alt="Shashi photo 42">
+      <img src="images/shashi/photo43.jpg" alt="Shashi photo 43">
+      <img src="images/shashi/photo44.jpg" alt="Shashi photo 44">
+      <img src="images/shashi/photo45.jpg" alt="Shashi photo 45">
+      <img src="images/shashi/photo46.jpg" alt="Shashi photo 46">
+      <img src="images/shashi/photo47.jpg" alt="Shashi photo 47">
+      <img src="images/shashi/photo48.jpg" alt="Shashi photo 48">
+      <img src="images/shashi/photo49.jpg" alt="Shashi photo 49">
+      <img src="images/shashi/photo50.jpg" alt="Shashi photo 50">
+      <img src="images/shashi/photo51.jpg" alt="Shashi photo 51">
+      <img src="images/shashi/photo52.jpg" alt="Shashi photo 52">
+      <img src="images/shashi/photo53.jpg" alt="Shashi photo 53">
+      <img src="images/shashi/photo54.jpg" alt="Shashi photo 54">
+      <img src="images/shashi/photo55.jpg" alt="Shashi photo 55">
+      <img src="images/shashi/photo56.jpg" alt="Shashi photo 56">
+      <img src="images/shashi/photo57.jpg" alt="Shashi photo 57">
+      <img src="images/shashi/photo58.jpg" alt="Shashi photo 58">
+      <img src="images/shashi/photo59.jpg" alt="Shashi photo 59">
+      <img src="images/shashi/photo60.jpg" alt="Shashi photo 60">
+      <img src="images/shashi/photo61.jpg" alt="Shashi photo 61">
+      <img src="images/shashi/photo62.jpg" alt="Shashi photo 62">
+      <img src="images/shashi/photo63.jpg" alt="Shashi photo 63">
+      <img src="images/shashi/photo64.jpg" alt="Shashi photo 64">
+      <img src="images/shashi/photo65.jpg" alt="Shashi photo 65">
+      <img src="images/shashi/photo66.jpg" alt="Shashi photo 66">
+      <img src="images/shashi/photo67.jpg" alt="Shashi photo 67">
+      <img src="images/shashi/photo68.jpg" alt="Shashi photo 68">
+      <img src="images/shashi/photo69.jpg" alt="Shashi photo 69">
+      <img src="images/shashi/photo70.jpg" alt="Shashi photo 70">
+      <img src="images/shashi/photo71.jpg" alt="Shashi photo 71">
+      <img src="images/shashi/photo72.jpg" alt="Shashi photo 72">
+      <img src="images/shashi/photo73.jpg" alt="Shashi photo 73">
+      <img src="images/shashi/photo74.jpg" alt="Shashi photo 74">
+      <img src="images/shashi/photo75.jpg" alt="Shashi photo 75">
+      <img src="images/shashi/photo76.jpg" alt="Shashi photo 76">
+      <img src="images/shashi/photo77.jpg" alt="Shashi photo 77">
+      <img src="images/shashi/photo78.jpg" alt="Shashi photo 78">
+      <img src="images/shashi/photo79.jpg" alt="Shashi photo 79">
+      <img src="images/shashi/photo80.jpg" alt="Shashi photo 80">
+      <img src="images/shashi/photo81.jpg" alt="Shashi photo 81">
+      <img src="images/shashi/photo82.jpg" alt="Shashi photo 82">
+      <img src="images/shashi/photo83.jpg" alt="Shashi photo 83">
+      <img src="images/shashi/photo84.jpg" alt="Shashi photo 84">
+      <img src="images/shashi/photo85.jpg" alt="Shashi photo 85">
+      <img src="images/shashi/photo86.jpg" alt="Shashi photo 86">
+      <img src="images/shashi/photo87.jpg" alt="Shashi photo 87">
+      <img src="images/shashi/photo88.jpg" alt="Shashi photo 88">
+      <img src="images/shashi/photo89.jpg" alt="Shashi photo 89">
+      <img src="images/shashi/photo90.jpg" alt="Shashi photo 90">
+      <img src="images/shashi/photo91.jpg" alt="Shashi photo 91">
+      <img src="images/shashi/photo92.jpg" alt="Shashi photo 92">
+      <img src="images/shashi/photo93.jpg" alt="Shashi photo 93">
+      <img src="images/shashi/photo94.jpg" alt="Shashi photo 94">
+      <img src="images/shashi/photo95.jpg" alt="Shashi photo 95">
+      <img src="images/shashi/photo96.jpg" alt="Shashi photo 96">
+      <img src="images/shashi/photo97.jpg" alt="Shashi photo 97">
+      <img src="images/shashi/photo98.jpg" alt="Shashi photo 98">
+      <img src="images/shashi/photo99.jpg" alt="Shashi photo 99">
+      <img src="images/shashi/photo100.jpg" alt="Shashi photo 100">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Malpani Family</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

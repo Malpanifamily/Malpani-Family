@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay Kumar Malpani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 contenteditable="false">Vijay Kumar Malpani</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tushar.html">Tushar</a>
+      <a href="palak.html">Palak</a>
+      <a href="shashi.html">Shashi</a>
+      <a href="ramgopal.html">Ram Gopal</a>
+    </nav>
+    <div class="controls">
+      <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="system">System</option>
+      </select>
+      <input type="color" id="bgColorPicker" title="Background color" />
+      <input type="color" id="headerColorPicker" title="Header/Footer color" />
+      <button onclick="toggleLogin()">Admin</button>
+    </div>
+  </header>
+
+  <div id="loginPanel" class="hidden">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminId" placeholder="Admin ID" />
+    <input type="password" id="adminPass" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <section>
+    <h2 contenteditable="false">Biography</h2>
+    <p contenteditable="false">Born on 5th February 1970, Vijay resides in North Lakhimpur and manages a hardware shop named Assam Iron Traders. His page showcases his professional journey, contributions to the family, and personal story.</p>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <!-- 100 images -->
+      <img src="images/vijay/photo1.jpg" alt="Vijay photo 1">
+      <img src="images/vijay/photo2.jpg" alt="Vijay photo 2">
+      <img src="images/vijay/photo3.jpg" alt="Vijay photo 3">
+      <img src="images/vijay/photo4.jpg" alt="Vijay photo 4">
+      <img src="images/vijay/photo5.jpg" alt="Vijay photo 5">
+      <img src="images/vijay/photo6.jpg" alt="Vijay photo 6">
+      <img src="images/vijay/photo7.jpg" alt="Vijay photo 7">
+      <img src="images/vijay/photo8.jpg" alt="Vijay photo 8">
+      <img src="images/vijay/photo9.jpg" alt="Vijay photo 9">
+      <img src="images/vijay/photo10.jpg" alt="Vijay photo 10">
+      <img src="images/vijay/photo11.jpg" alt="Vijay photo 11">
+      <img src="images/vijay/photo12.jpg" alt="Vijay photo 12">
+      <img src="images/vijay/photo13.jpg" alt="Vijay photo 13">
+      <img src="images/vijay/photo14.jpg" alt="Vijay photo 14">
+      <img src="images/vijay/photo15.jpg" alt="Vijay photo 15">
+      <img src="images/vijay/photo16.jpg" alt="Vijay photo 16">
+      <img src="images/vijay/photo17.jpg" alt="Vijay photo 17">
+      <img src="images/vijay/photo18.jpg" alt="Vijay photo 18">
+      <img src="images/vijay/photo19.jpg" alt="Vijay photo 19">
+      <img src="images/vijay/photo20.jpg" alt="Vijay photo 20">
+      <img src="images/vijay/photo21.jpg" alt="Vijay photo 21">
+      <img src="images/vijay/photo22.jpg" alt="Vijay photo 22">
+      <img src="images/vijay/photo23.jpg" alt="Vijay photo 23">
+      <img src="images/vijay/photo24.jpg" alt="Vijay photo 24">
+      <img src="images/vijay/photo25.jpg" alt="Vijay photo 25">
+      <img src="images/vijay/photo26.jpg" alt="Vijay photo 26">
+      <img src="images/vijay/photo27.jpg" alt="Vijay photo 27">
+      <img src="images/vijay/photo28.jpg" alt="Vijay photo 28">
+      <img src="images/vijay/photo29.jpg" alt="Vijay photo 29">
+      <img src="images/vijay/photo30.jpg" alt="Vijay photo 30">
+      <img src="images/vijay/photo31.jpg" alt="Vijay photo 31">
+      <img src="images/vijay/photo32.jpg" alt="Vijay photo 32">
+      <img src="images/vijay/photo33.jpg" alt="Vijay photo 33">
+      <img src="images/vijay/photo34.jpg" alt="Vijay photo 34">
+      <img src="images/vijay/photo35.jpg" alt="Vijay photo 35">
+      <img src="images/vijay/photo36.jpg" alt="Vijay photo 36">
+      <img src="images/vijay/photo37.jpg" alt="Vijay photo 37">
+      <img src="images/vijay/photo38.jpg" alt="Vijay photo 38">
+      <img src="images/vijay/photo39.jpg" alt="Vijay photo 39">
+      <img src="images/vijay/photo40.jpg" alt="Vijay photo 40">
+      <img src="images/vijay/photo41.jpg" alt="Vijay photo 41">
+      <img src="images/vijay/photo42.jpg" alt="Vijay photo 42">
+      <img src="images/vijay/photo43.jpg" alt="Vijay photo 43">
+      <img src="images/vijay/photo44.jpg" alt="Vijay photo 44">
+      <img src="images/vijay/photo45.jpg" alt="Vijay photo 45">
+      <img src="images/vijay/photo46.jpg" alt="Vijay photo 46">
+      <img src="images/vijay/photo47.jpg" alt="Vijay photo 47">
+      <img src="images/vijay/photo48.jpg" alt="Vijay photo 48">
+      <img src="images/vijay/photo49.jpg" alt="Vijay photo 49">
+      <img src="images/vijay/photo50.jpg" alt="Vijay photo 50">
+             <img src="images/vijay/photo51.jpg" alt="Vijay photo 51">
+      <img src="images/vijay/photo52.jpg" alt="Vijay photo 52">
+      <img src="images/vijay/photo53.jpg" alt="Vijay photo 53">
+      <img src="images/vijay/photo54.jpg" alt="Vijay photo 54">
+      <img src="images/vijay/photo55.jpg" alt="Vijay photo 55">
+      <img src="images/vijay/photo56.jpg" alt="Vijay photo 56">
+      <img src="images/vijay/photo57.jpg" alt="Vijay photo 57">
+      <img src="images/vijay/photo58.jpg" alt="Vijay photo 58">
+      <img src="images/vijay/photo59.jpg" alt="Vijay photo 59">
+      <img src="images/vijay/photo60.jpg" alt="Vijay photo 60">
+      <img src="images/vijay/photo61.jpg" alt="Vijay photo 61">
+      <img src="images/vijay/photo62.jpg" alt="Vijay photo 62">
+      <img src="images/vijay/photo63.jpg" alt="Vijay photo 63">
+      <img src="images/vijay/photo64.jpg" alt="Vijay photo 64">
+      <img src="images/vijay/photo65.jpg" alt="Vijay photo 65">
+      <img src="images/vijay/photo66.jpg" alt="Vijay photo 66">
+      <img src="images/vijay/photo67.jpg" alt="Vijay photo 67">
+      <img src="images/vijay/photo68.jpg" alt="Vijay photo 68">
+      <img src="images/vijay/photo69.jpg" alt="Vijay photo 69">
+      <img src="images/vijay/photo70.jpg" alt="Vijay photo 70">
+      <img src="images/vijay/photo71.jpg" alt="Vijay photo 71">
+      <img src="images/vijay/photo72.jpg" alt="Vijay photo 72">
+      <img src="images/vijay/photo73.jpg" alt="Vijay photo 73">
+      <img src="images/vijay/photo74.jpg" alt="Vijay photo 74">
+      <img src="images/vijay/photo75.jpg" alt="Vijay photo 75">
+      <img src="images/vijay/photo76.jpg" alt="Vijay photo 76">
+      <img src="images/vijay/photo77.jpg" alt="Vijay photo 77">
+      <img src="images/vijay/photo78.jpg" alt="Vijay photo 78">
+      <img src="images/vijay/photo79.jpg" alt="Vijay photo 79">
+      <img src="images/vijay/photo80.jpg" alt="Vijay photo 80">
+      <img src="images/vijay/photo81.jpg" alt="Vijay photo 81">
+      <img src="images/vijay/photo82.jpg" alt="Vijay photo 82">
+      <img src="images/vijay/photo83.jpg" alt="Vijay photo 83">
+      <img src="images/vijay/photo84.jpg" alt="Vijay photo 84">
+      <img src="images/vijay/photo85.jpg" alt="Vijay photo 85">
+      <img src="images/vijay/photo86.jpg" alt="Vijay photo 86">
+      <img src="images/vijay/photo87.jpg" alt="Vijay photo 87">
+      <img src="images/vijay/photo88.jpg" alt="Vijay photo 88">
+      <img src="images/vijay/photo89.jpg" alt="Vijay photo 89">
+      <img src="images/vijay/photo90.jpg" alt="Vijay photo 90">
+      <img src="images/vijay/photo91.jpg" alt="Vijay photo 91">
+      <img src="images/vijay/photo92.jpg" alt="Vijay photo 92">
+      <img src="images/vijay/photo93.jpg" alt="Vijay photo 93">
+      <img src="images/vijay/photo94.jpg" alt="Vijay photo 94">
+      <img src="images/vijay/photo95.jpg" alt="Vijay photo 95">
+      <img src="images/vijay/photo96.jpg" alt="Vijay photo 96">
+      <img src="images/vijay/photo97.jpg" alt="Vijay photo 97">
+      <img src="images/vijay/photo98.jpg" alt="Vijay photo 98">
+      <img src="images/vijay/photo99.jpg" alt="Vijay photo 99">
+      <img src="images/vijay/photo100.jpg" alt="Vijay photo 100">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Malpani Family</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palak Malpani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 contenteditable="false">Palak Malpani</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tushar.html">Tushar</a>
+      <a href="shashi.html">Shashi</a>
+      <a href="vijay.html">Vijay</a>
+      <a href="ramgopal.html">Ram Gopal</a>
+    </nav>
+    <div class="controls">
+      <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="system">System</option>
+      </select>
+      <input type="color" id="bgColorPicker" title="Background color" />
+      <input type="color" id="headerColorPicker" title="Header/Footer color" />
+      <button onclick="toggleLogin()">Admin</button>
+    </div>
+  </header>
+
+  <div id="loginPanel" class="hidden">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminId" placeholder="Admin ID" />
+    <input type="password" id="adminPass" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <section>
+    <h2 contenteditable="false">Biography</h2>
+    <p contenteditable="false">Born on 10th October 2007, Palak studied at L.K. Singhania Education Centre in Gotan, Rajasthan. She held the high position of Cultural Secretary, showcasing her leadership and creative talents. This page highlights her journey and achievements.</p>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <!-- 100 images -->
+      <img src="images/palak/photo1.jpg" alt="Palak photo 1">
+      <img src="images/palak/photo2.jpg" alt="Palak photo 2">
+      <img src="images/palak/photo3.jpg" alt="Palak photo 3">
+      <img src="images/palak/photo4.jpg" alt="Palak photo 4">
+      <img src="images/palak/photo5.jpg" alt="Palak photo 5">
+      <img src="images/palak/photo6.jpg" alt="Palak photo 6">
+      <img src="images/palak/photo7.jpg" alt="Palak photo 7">
+      <img src="images/palak/photo8.jpg" alt="Palak photo 8">
+      <img src="images/palak/photo9.jpg" alt="Palak photo 9">
+      <img src="images/palak/photo10.jpg" alt="Palak photo 10">
+      <img src="images/palak/photo11.jpg" alt="Palak photo 11">
+      <img src="images/palak/photo12.jpg" alt="Palak photo 12">
+      <img src="images/palak/photo13.jpg" alt="Palak photo 13">
+      <img src="images/palak/photo14.jpg" alt="Palak photo 14">
+      <img src="images/palak/photo15.jpg" alt="Palak photo 15">
+      <img src="images/palak/photo16.jpg" alt="Palak photo 16">
+      <img src="images/palak/photo17.jpg" alt="Palak photo 17">
+      <img src="images/palak/photo18.jpg" alt="Palak photo 18">
+      <img src="images/palak/photo19.jpg" alt="Palak photo 19">
+      <img src="images/palak/photo20.jpg" alt="Palak photo 20">
+      <img src="images/palak/photo21.jpg" alt="Palak photo 21">
+      <img src="images/palak/photo22.jpg" alt="Palak photo 22">
+      <img src="images/palak/photo23.jpg" alt="Palak photo 23">
+      <img src="images/palak/photo24.jpg" alt="Palak photo 24">
+      <img src="images/palak/photo25.jpg" alt="Palak photo 25">
+      <img src="images/palak/photo26.jpg" alt="Palak photo 26">
+      <img src="images/palak/photo27.jpg" alt="Palak photo 27">
+      <img src="images/palak/photo28.jpg" alt="Palak photo 28">
+      <img src="images/palak/photo29.jpg" alt="Palak photo 29">
+      <img src="images/palak/photo30.jpg" alt="Palak photo 30">
+      <img src="images/palak/photo31.jpg" alt="Palak photo 31">
+      <img src="images/palak/photo32.jpg" alt="Palak photo 32">
+      <img src="images/palak/photo33.jpg" alt="Palak photo 33">
+      <img src="images/palak/photo34.jpg" alt="Palak photo 34">
+      <img src="images/palak/photo35.jpg" alt="Palak photo 35">
+      <img src="images/palak/photo36.jpg" alt="Palak photo 36">
+      <img src="images/palak/photo37.jpg" alt="Palak photo 37">
+      <img src="images/palak/photo38.jpg" alt="Palak photo 38">
+      <img src="images/palak/photo39.jpg" alt="Palak photo 39">
+      <img src="images/palak/photo40.jpg" alt="Palak photo 40">
+      <img src="images/palak/photo41.jpg" alt="Palak photo 41">
+      <img src="images/palak/photo42.jpg" alt="Palak photo 42">
+      <img src="images/palak/photo43.jpg" alt="Palak photo 43">
+      <img src="images/palak/photo44.jpg" alt="Palak photo 44">
+      <img src="images/palak/photo45.jpg" alt="Palak photo 45">
+      <img src="images/palak/photo46.jpg" alt="Palak photo 46">
+      <img src="images/palak/photo47.jpg" alt="Palak photo 47">
+      <img src="images/palak/photo48.jpg" alt="Palak photo 48">
+      <img src="images/palak/photo49.jpg" alt="Palak photo 49">
+      <img src="images/palak/photo50.jpg" alt="Palak photo 50">
+      <img src="images/palak/photo51.jpg" alt="Palak photo 51">
+      <img src="images/palak/photo52.jpg" alt="Palak photo 52">
+      <img src="images/palak/photo53.jpg" alt="Palak photo 53">
+      <img src="images/palak/photo54.jpg" alt="Palak photo 54">
+      <img src="images/palak/photo55.jpg" alt="Palak photo 55">
+      <img src="images/palak/photo56.jpg" alt="Palak photo 56">
+      <img src="images/palak/photo57.jpg" alt="Palak photo 57">
+      <img src="images/palak/photo58.jpg" alt="Palak photo 58">
+      <img src="images/palak/photo59.jpg" alt="Palak photo 59">
+      <img src="images/palak/photo60.jpg" alt="Palak photo 60">
+      <img src="images/palak/photo61.jpg" alt="Palak photo 61">
+      <img src="images/palak/photo62.jpg" alt="Palak photo 62">
+      <img src="images/palak/photo63.jpg" alt="Palak photo 63">
+      <img src="images/palak/photo64.jpg" alt="Palak photo 64">
+      <img src="images/palak/photo65.jpg" alt="Palak photo 65">
+      <img src="images/palak/photo66.jpg" alt="Palak photo 66">
+      <img src="images/palak/photo67.jpg" alt="Palak photo 67">
+      <img src="images/palak/photo68.jpg" alt="Palak photo 68">
+      <img src="images/palak/photo69.jpg" alt="Palak photo 69">
+      <img src="images/palak/photo70.jpg" alt="Palak photo 70">
+      <img src="images/palak/photo71.jpg" alt="Palak photo 71">
+      <img src="images/palak/photo72.jpg" alt="Palak photo 72">
+      <img src="images/palak/photo73.jpg" alt="Palak photo 73">
+      <img src="images/palak/photo74.jpg" alt="Palak photo 74">
+      <img src="images/palak/photo75.jpg" alt="Palak photo 75">
+      <img src="images/palak/photo76.jpg" alt="Palak photo 76">
+      <img src="images/palak/photo77.jpg" alt="Palak photo 77">
+      <img src="images/palak/photo78.jpg" alt="Palak photo 78">
+      <img src="images/palak/photo79.jpg" alt="Palak photo 79">
+      <img src="images/palak/photo80.jpg" alt="Palak photo 80">
+      <img src="images/palak/photo81.jpg" alt="Palak photo 81">
+      <img src="images/palak/photo82.jpg" alt="Palak photo 82">
+      <img src="images/palak/photo83.jpg" alt="Palak photo 83">
+      <img src="images/palak/photo84.jpg" alt="Palak photo 84">
+      <img src="images/palak/photo85.jpg" alt="Palak photo 85">
+      <img src="images/palak/photo86.jpg" alt="Palak photo 86">
+      <img src="images/palak/photo87.jpg" alt="Palak photo 87">
+      <img src="images/palak/photo88.jpg" alt="Palak photo 88">
+      <img src="images/palak/photo89.jpg" alt="Palak photo 89">
+      <img src="images/palak/photo90.jpg" alt="Palak photo 90">
+      <img src="images/palak/photo91.jpg" alt="Palak photo 91">
+      <img src="images/palak/photo92.jpg" alt="Palak photo 92">
+      <img src="images/palak/photo93.jpg" alt="Palak photo 93">
+      <img src="images/palak/photo94.jpg" alt="Palak photo 94">
+      <img src="images/palak/photo95.jpg" alt="Palak photo 95">
+      <img src="images/palak/photo96.jpg" alt="Palak photo 96">
+      <img src="images/palak/photo97.jpg" alt="Palak photo 97">
+      <img src="images/palak/photo98.jpg" alt="Palak photo 98">
+      <img src="images/palak/photo99.jpg" alt="Palak photo 99">
+      <img src="images/palak/photo100.jpg" alt="Palak photo 100">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Malpani Family</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

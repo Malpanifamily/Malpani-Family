@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar Malpani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 contenteditable="false">Tushar Malpani</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="palak.html">Palak</a>
+      <a href="shashi.html">Shashi</a>
+      <a href="vijay.html">Vijay</a>
+      <a href="ramgopal.html">Ram Gopal</a>
+    </nav>
+    <div class="controls">
+      <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="system">System</option>
+      </select>
+      <input type="color" id="bgColorPicker" title="Background color" />
+      <input type="color" id="headerColorPicker" title="Header/Footer color" />
+      <button onclick="toggleLogin()">Admin</button>
+    </div>
+  </header>
+
+  <div id="loginPanel" class="hidden">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminId" placeholder="Admin ID" />
+    <input type="password" id="adminPass" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <section>
+    <h2 contenteditable="false">Biography</h2>
+    <p contenteditable="false">Born on 12th March 2012, Tushar is currently in Grade 8 at G.D. Goenka International School, Surat. He previously lived in North Lakhimpur, Assam. This page showcases his journey through childhood and school life.</p>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <!-- 100 images -->
+      <img src="images/tushar/photo1.jpg" alt="Tushar photo 1">
+      <img src="images/tushar/photo2.jpg" alt="Tushar photo 2">
+      <img src="images/tushar/photo3.jpg" alt="Tushar photo 3">
+      <img src="images/tushar/photo4.jpg" alt="Tushar photo 4">
+      <img src="images/tushar/photo5.jpg" alt="Tushar photo 5">
+      <img src="images/tushar/photo6.jpg" alt="Tushar photo 6">
+      <img src="images/tushar/photo7.jpg" alt="Tushar photo 7">
+      <img src="images/tushar/photo8.jpg" alt="Tushar photo 8">
+      <img src="images/tushar/photo9.jpg" alt="Tushar photo 9">
+      <img src="images/tushar/photo10.jpg" alt="Tushar photo 10">
+      <img src="images/tushar/photo11.jpg" alt="Tushar photo 11">
+      <img src="images/tushar/photo12.jpg" alt="Tushar photo 12">
+      <img src="images/tushar/photo13.jpg" alt="Tushar photo 13">
+      <img src="images/tushar/photo14.jpg" alt="Tushar photo 14">
+      <img src="images/tushar/photo15.jpg" alt="Tushar photo 15">
+      <img src="images/tushar/photo16.jpg" alt="Tushar photo 16">
+      <img src="images/tushar/photo17.jpg" alt="Tushar photo 17">
+      <img src="images/tushar/photo18.jpg" alt="Tushar photo 18">
+      <img src="images/tushar/photo19.jpg" alt="Tushar photo 19">
+      <img src="images/tushar/photo20.jpg" alt="Tushar photo 20">
+      <img src="images/tushar/photo21.jpg" alt="Tushar photo 21">
+      <img src="images/tushar/photo22.jpg" alt="Tushar photo 22">
+      <img src="images/tushar/photo23.jpg" alt="Tushar photo 23">
+      <img src="images/tushar/photo24.jpg" alt="Tushar photo 24">
+      <img src="images/tushar/photo25.jpg" alt="Tushar photo 25">
+      <img src="images/tushar/photo26.jpg" alt="Tushar photo 26">
+      <img src="images/tushar/photo27.jpg" alt="Tushar photo 27">
+      <img src="images/tushar/photo28.jpg" alt="Tushar photo 28">
+      <img src="images/tushar/photo29.jpg" alt="Tushar photo 29">
+      <img src="images/tushar/photo30.jpg" alt="Tushar photo 30">
+      <img src="images/tushar/photo31.jpg" alt="Tushar photo 31">
+      <img src="images/tushar/photo32.jpg" alt="Tushar photo 32">
+      <img src="images/tushar/photo33.jpg" alt="Tushar photo 33">
+      <img src="images/tushar/photo34.jpg" alt="Tushar photo 34">
+      <img src="images/tushar/photo35.jpg" alt="Tushar photo 35">
+      <img src="images/tushar/photo36.jpg" alt="Tushar photo 36">
+      <img src="images/tushar/photo37.jpg" alt="Tushar photo 37">
+      <img src="images/tushar/photo38.jpg" alt="Tushar photo 38">
+      <img src="images/tushar/photo39.jpg" alt="Tushar photo 39">
+      <img src="images/tushar/photo40.jpg" alt="Tushar photo 40">
+      <img src="images/tushar/photo41.jpg" alt="Tushar photo 41">
+      <img src="images/tushar/photo42.jpg" alt="Tushar photo 42">
+      <img src="images/tushar/photo43.jpg" alt="Tushar photo 43">
+      <img src="images/tushar/photo44.jpg" alt="Tushar photo 44">
+      <img src="images/tushar/photo45.jpg" alt="Tushar photo 45">
+      <img src="images/tushar/photo46.jpg" alt="Tushar photo 46">
+      <img src="images/tushar/photo47.jpg" alt="Tushar photo 47">
+      <img src="images/tushar/photo48.jpg" alt="Tushar photo 48">
+      <img src="images/tushar/photo49.jpg" alt="Tushar photo 49">
+      <img src="images/tushar/photo50.jpg" alt="Tushar photo 50">
+      <img src="images/tushar/photo51.jpg" alt="Tushar photo 51">
+      <img src="images/tushar/photo52.jpg" alt="Tushar photo 52">
+      <img src="images/tushar/photo53.jpg" alt="Tushar photo 53">
+      <img src="images/tushar/photo54.jpg" alt="Tushar photo 54">
+      <img src="images/tushar/photo55.jpg" alt="Tushar photo 55">
+      <img src="images/tushar/photo56.jpg" alt="Tushar photo 56">
+      <img src="images/tushar/photo57.jpg" alt="Tushar photo 57">
+      <img src="images/tushar/photo58.jpg" alt="Tushar photo 58">
+      <img src="images/tushar/photo59.jpg" alt="Tushar photo 59">
+      <img src="images/tushar/photo60.jpg" alt="Tushar photo 60">
+      <img src="images/tushar/photo61.jpg" alt="Tushar photo 61">
+      <img src="images/tushar/photo62.jpg" alt="Tushar photo 62">
+      <img src="images/tushar/photo63.jpg" alt="Tushar photo 63">
+      <img src="images/tushar/photo64.jpg" alt="Tushar photo 64">
+      <img src="images/tushar/photo65.jpg" alt="Tushar photo 65">
+      <img src="images/tushar/photo66.jpg" alt="Tushar photo 66">
+      <img src="images/tushar/photo67.jpg" alt="Tushar photo 67">
+<img src="images/tushar/photo68.jpg" alt="Tushar photo 68">
+<img src="images/tushar/photo69.jpg" alt="Tushar photo 69">
+<img src="images/tushar/photo70.jpg" alt="Tushar photo 70">
+<img src="images/tushar/photo71.jpg" alt="Tushar photo 71">
+<img src="images/tushar/photo72.jpg" alt="Tushar photo 72">
+<img src="images/tushar/photo73.jpg" alt="Tushar photo 73">
+<img src="images/tushar/photo74.jpg" alt="Tushar photo 74">
+<img src="images/tushar/photo75.jpg" alt="Tushar photo 75">
+<img src="images/tushar/photo76.jpg" alt="Tushar photo 76">
+<img src="images/tushar/photo77.jpg" alt="Tushar photo 77">
+<img src="images/tushar/photo78.jpg" alt="Tushar photo 78">
+<img src="images/tushar/photo79.jpg" alt="Tushar photo 79">
+<img src="images/tushar/photo80.jpg" alt="Tushar photo 80">
+<img src="images/tushar/photo81.jpg" alt="Tushar photo 81">
+<img src="images/tushar/photo82.jpg" alt="Tushar photo 82">
+<img src="images/tushar/photo83.jpg" alt="Tushar photo 83">
+<img src="images/tushar/photo84.jpg" alt="Tushar photo 84">
+<img src="images/tushar/photo85.jpg" alt="Tushar photo 85">
+<img src="images/tushar/photo86.jpg" alt="Tushar photo 86">
+<img src="images/tushar/photo87.jpg" alt="Tushar photo 87">
+<img src="images/tushar/photo88.jpg" alt="Tushar photo 88">
+<img src="images/tushar/photo89.jpg" alt="Tushar photo 89">
+<img src="images/tushar/photo90.jpg" alt="Tushar photo 90">
+<img src="images/tushar/photo91.jpg" alt="Tushar photo 91">
+<img src="images/tushar/photo92.jpg" alt="Tushar photo 92">
+<img src="images/tushar/photo93.jpg" alt="Tushar photo 93">
+<img src="images/tushar/photo94.jpg" alt="Tushar photo 94">
+<img src="images/tushar/photo95.jpg" alt="Tushar photo 95">
+<img src="images/tushar/photo96.jpg" alt="Tushar photo 96">
+<img src="images/tushar/photo97.jpg" alt="Tushar photo 97">
+<img src="images/tushar/photo98.jpg" alt="Tushar photo 98">
+<img src="images/tushar/photo99.jpg" alt="Tushar photo 99">
+<img src="images/tushar/photo100.jpg" alt="Tushar photo 100">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Malpani Family</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

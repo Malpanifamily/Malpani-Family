@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malpani Family</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 contenteditable="false">Malpani Family</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tushar.html">Tushar</a>
+      <a href="palak.html">Palak</a>
+      <a href="shashi.html">Shashi</a>
+      <a href="vijay.html">Vijay</a>
+      <a href="ramgopal.html">Ram Gopal</a>
+    </nav>
+    <div class="controls">
+      <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="system">System</option>
+      </select>
+      <input type="color" id="bgColorPicker" title="Choose background color" />
+      <button onclick="toggleLogin()">Admin</button>
+    </div>
+  </header>
+
+  <div id="loginPanel" class="hidden">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminId" placeholder="Admin ID" />
+    <input type="password" id="adminPass" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <section>
+    <h2 contenteditable="false">Welcome</h2>
+    <p contenteditable="false">This website is a digital memory book for the Malpani family, made with love and pride. Each member has a dedicated page to celebrate their journey, achievements, and memories.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Malpani Family</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
